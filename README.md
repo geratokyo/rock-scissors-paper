@@ -1,4 +1,4 @@
-#__Rock Scissors Paper Game__
+# __Rock Scissors Paper Game__
 
 
 ## Instructions 
