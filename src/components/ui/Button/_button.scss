@@ -1,0 +1,27 @@
+
+
+.button{
+    padding:1rem; 
+    background-color:$color-3; 
+    display: inline-block; 
+    border-radius: 10px;
+    -webkit-transition:background-color 300ms ease-in-out;
+    -moz-transition:background-color 300ms ease-in-out;
+    -o-transition:background-color 300ms ease-in-out;
+    transition:background-color 300ms ease-in-out;
+    &__label{
+        color:$color-2;
+    }
+
+    &--active{
+        background-color:$color-4;
+        &:hover{
+            background-color: lighten($color-4,10%)!important; 
+        }
+    }
+
+    &:hover{
+        background-color: lighten($color-3,10%); 
+        cursor: pointer;
+    }
+}

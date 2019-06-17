@@ -1,0 +1,82 @@
+/*************************/
+/////// GENERAL VARS //////
+/*************************/
+
+//TODO vars
+
+/*************************/
+/////// CUSTOM VARS ///////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// TYPOGRAPHY VARS /////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// COMPONENT CODE //////
+/*************************/
+.player-panel {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    max-height: 350px;
+    margin-bottom: 1rem;
+    &__label {
+        text-align: center;
+        margin-top:3rem; 
+        color:$color-1;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+
+
+        &--confirm{
+            background-color:$color-4; 
+
+            &:hover{
+                background-color: lighten($color-4,10%);  
+            }
+        }
+    }
+
+    &--win {
+        -webkit-box-shadow: 10px 10px 21px -2px rgba(122, 182, 73, 0.9);
+        -moz-box-shadow: 10px 10px 21px -2px rgba(122, 182, 73, 0.9);
+        box-shadow: 10px 10px 21px -2px rgba(122, 182, 73, 0.9);
+    }
+
+
+    &__gesture{
+        text-align: center; 
+        i{
+            font-size:60px;
+        }
+    }
+}
+
+@include SmallDevice {
+    .player-panel {
+        max-width: 400px;
+        margin: 0 20px;
+        min-height:350px;
+        max-height: none;
+    }
+}
+
+@include MediumDevice {
+    .player-panel {
+    }
+}
+
+/*************************/
+/////// CUSTOM CODE ///////
+/*************************/
+//TODO code

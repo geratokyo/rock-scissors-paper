@@ -1,0 +1,46 @@
+/*************************/
+/////// GENERAL VARS //////
+/*************************/
+
+//TODO vars
+
+/*************************/
+/////// CUSTOM VARS ///////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// TYPOGRAPHY VARS /////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// COMPONENT CODE //////
+/*************************/
+.panel {
+    background-color: $color-2;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+    -webkit-box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.24);
+    box-shadow: 10px 10px 21px -2px rgba(0, 0, 0, 0.24);
+    padding:1rem;
+}
+
+@include SmallDevice {
+    .panel {
+    }
+}
+
+@include MediumDevice {
+    .panel {
+    }
+}
+
+/*************************/
+/////// CUSTOM CODE ///////
+/*************************/
+//TODO code

@@ -1,0 +1,47 @@
+/*************************/
+/////// GENERAL VARS //////
+/*************************/
+
+//TODO vars
+
+/*************************/
+/////// CUSTOM VARS /////// 
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// TYPOGRAPHY VARS /////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// COMPONENT CODE //////
+/*************************/
+.game-layout{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height:100vh; 
+    width:100%;
+    
+}
+
+@include SmallDevice{
+    .game-layout{
+        flex-direction: row;
+    }
+}
+
+
+@include MediumDevice{
+    .game-layout{
+    }
+}
+
+/*************************/
+/////// CUSTOM CODE /////// 
+/*************************/
+//TODO code

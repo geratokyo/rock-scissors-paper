@@ -1,0 +1,86 @@
+/*************************/
+/////// GENERAL VARS //////
+/*************************/
+
+//TODO vars
+
+/*************************/
+/////// CUSTOM VARS ///////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// TYPOGRAPHY VARS /////
+/*************************/
+
+//TODO vars
+
+/*************************/
+///// COMPONENT CODE //////
+/*************************/
+.intro-page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-4;
+        position: relative;
+        &:nth-child(2) {
+            background-color: $color-3;
+
+            &:before {
+                background: darken($color-3, 10%);
+            }
+        }
+
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            background: darken($color-4, 10%);
+            z-index: 0;
+            width: 0px;
+            -webkit-transition: all 250ms ease-in-out;
+            -moz-transition: all 250ms ease-in-out;
+            -o-transition: all 250ms ease-in-out;
+            transition: all 250ms ease-in-out;
+        }
+        &:hover {
+            &:before {
+                width: 200%;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        color: $color-2;
+        z-index: 1000;
+        font-size:65px; 
+        font-weight: bold;
+        span{
+            display: block;
+            font-weight: normal;
+            font-size: 30px;
+        }
+    }
+}
+
+@include SmallDevice {
+    .intro-page {
+        flex-direction: row;
+    }
+}
+
+@include MediumDevice {
+    .intro-page {
+    }
+}
